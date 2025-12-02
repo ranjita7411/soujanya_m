@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Online Application / Registration Form</h2>
+
+    <form id="regForm" action="process.php" method="POST">
+        
+        <label>Full Name</label>
+        <input type="text" name="fullname" id="fullname" required>
+
+        <label>Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label>Phone Number</label>
+        <input type="text" name="phone" id="phone" required>
+
+        <label>Gender</label>
+        <select name="gender" id="gender">
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label>Address</label>
+        <textarea name="address" id="address" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
